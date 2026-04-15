@@ -1,17 +1,1 @@
-apiVersion: kustomize.config.k8s.io/v1beta1
-kind: Kustomization
-
-namespace: artemis-2-photos
-
-resources:
-  - ../../base
-  - ingress.yaml
-
-images:
-  - name: registry.144.91.77.245.sslip.io/artemis-2-photos
-    newName: registry.144.91.77.245.sslip.io/artemis-2-photos
-    newTag: 87eea72b9047d318e2262d9c5a60de09a5147f63
-
-commonLabels:
-  app.kubernetes.io/name: artemis-2-photos
-  app.kubernetes.io/part-of: artemis-2-photos
+apiVersion: kustomize.config.k8s.io/v1beta1\nkind: Kustomization\n\nnamespace: artemis-2-photos\n\nresources:\n  - ../../base\n  - ingress.yaml\n\nimages:\n  - name: registry.144.91.77.245.sslip.io/artemis-2-photos\n    newName: registry.144.91.77.245.sslip.io/artemis-2-photos\n    newTag: 2f5a206170d2b40dc3954c3519b05619f2f7c380\n\ncommonLabels:\n  app.kubernetes.io/name: artemis-2-photos\n  app.kubernetes.io/part-of: artemis-2-photos\n
