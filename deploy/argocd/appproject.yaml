@@ -1,0 +1,18 @@
+apiVersion: argoproj.io/v1alpha1
+kind: AppProject
+metadata:
+  name: artemis-2-photos
+  namespace: argocd
+spec:
+  description: Artemis 2 Photos static site managed from the application repository
+  sourceRepos:
+    - https://github.com/gateszhangc/artemis-2-photos.git
+  destinations:
+    - namespace: artemis-2-photos
+      server: https://kubernetes.default.svc
+  clusterResourceWhitelist:
+    - group: "*"
+      kind: "*"
+  namespaceResourceWhitelist:
+    - group: "*"
+      kind: "*"

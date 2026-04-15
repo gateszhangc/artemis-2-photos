@@ -27,10 +27,6 @@ test.describe("Artemis 2 Photos landing page", () => {
       "href",
       "https://anapaularenault.lol/"
     );
-    await expect(page.locator("meta[name='google-site-verification']")).toHaveAttribute(
-      "content",
-      "__GOOGLE_SITE_VERIFICATION__"
-    );
 
     const faq = page.locator(".faq-item").first();
     if (isMobile) {
@@ -53,10 +49,12 @@ test.describe("Artemis 2 Photos landing page", () => {
     const publicEnv = await page.evaluate(() => window.__ARTEMIS_PUBLIC_ENV__);
     expect(publicEnv.webUrl).toBe("https://anapaularenault.lol");
     expect(publicEnv.projectName).toBe("artemis-2-photos");
+    expect(publicEnv.googleAnalyticsId).toBe("G-Y6YZ3N2BHD");
     expect(publicEnv.clarityProjectId).toBe("wbz78yq9o9");
 
     await expect(page.locator("html")).toHaveAttribute("data-clarity-enabled", "true");
-    await expect(page.locator("html")).toHaveAttribute("data-ga-enabled", "false");
+    await expect(page.locator("html")).toHaveAttribute("data-ga-enabled", "true");
+    await expect(page.locator("html")).toHaveAttribute("data-ga-measurement-id", "G-Y6YZ3N2BHD");
 
     expect(pageErrors).toEqual([]);
     expect(consoleErrors).toEqual([]);

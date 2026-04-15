@@ -1,0 +1,20 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: artemis-2-photos
+  namespace: argocd
+spec:
+  project: artemis-2-photos
+  source:
+    repoURL: https://github.com/gateszhangc/artemis-2-photos.git
+    targetRevision: main
+    path: deploy/k8s/overlays/prod
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: artemis-2-photos
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+      - CreateNamespace=true
