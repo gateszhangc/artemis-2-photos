@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: artemis-2-photos
+spec:
+  selector:
+    app: artemis-2-photos
+  ports:
+    - port: 80
+      targetPort: http
+      protocol: TCP
+      name: http

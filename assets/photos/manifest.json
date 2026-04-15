@@ -1,0 +1,56 @@
+[
+  {
+    "slug": "featured-launch-pad",
+    "source": "https://images-assets.nasa.gov/image/KSC-20260210-PH-JBS01-0074/collection.json",
+    "asset": "http://images-assets.nasa.gov/image/KSC-20260210-PH-JBS01-0074/KSC-20260210-PH-JBS01-0074~large.jpg",
+    "output": "assets/photos/featured-launch-pad.webp"
+  },
+  {
+    "slug": "launch-pad-wide",
+    "source": "https://images-assets.nasa.gov/image/KSC-20260210-PH-JBS01-0205/collection.json",
+    "asset": "http://images-assets.nasa.gov/image/KSC-20260210-PH-JBS01-0205/KSC-20260210-PH-JBS01-0205~large.jpg",
+    "output": "assets/photos/launch-pad-wide.webp"
+  },
+  {
+    "slug": "moon-behind-stack",
+    "source": "https://images-assets.nasa.gov/image/Artemis%20II%20at%20the%20pad%20Moon%2001292026_4/collection.json",
+    "asset": "http://images-assets.nasa.gov/image/Artemis II at the pad Moon 01292026_4/Artemis II at the pad Moon 01292026_4~large.jpg",
+    "output": "assets/photos/moon-behind-stack.webp"
+  },
+  {
+    "slug": "full-moon-rise",
+    "source": "https://images-assets.nasa.gov/image/Artemis%20II%20at%20the%20pad%20Full%20Snow%20Moon%2002012026_6/collection.json",
+    "asset": "http://images-assets.nasa.gov/image/Artemis II at the pad Full Snow Moon 02012026_6/Artemis II at the pad Full Snow Moon 02012026_6~large.jpg",
+    "output": "assets/photos/full-moon-rise.webp"
+  },
+  {
+    "slug": "crew-with-egs",
+    "source": "https://images-assets.nasa.gov/image/KSC-20230807-PH-KLS01_0518/collection.json",
+    "asset": "http://images-assets.nasa.gov/image/KSC-20230807-PH-KLS01_0518/KSC-20230807-PH-KLS01_0518~large.jpg",
+    "output": "assets/photos/crew-with-egs.webp"
+  },
+  {
+    "slug": "crew-recovery",
+    "source": "https://images-assets.nasa.gov/image/JB5_0746/collection.json",
+    "asset": "http://images-assets.nasa.gov/image/JB5_0746/JB5_0746~large.jpg",
+    "output": "assets/photos/crew-recovery.webp"
+  },
+  {
+    "slug": "orion-delivery-a",
+    "source": "https://images-assets.nasa.gov/image/KSC-20230602-PH-GEB01-0019/collection.json",
+    "asset": "http://images-assets.nasa.gov/image/KSC-20230602-PH-GEB01-0019/KSC-20230602-PH-GEB01-0019~large.jpg",
+    "output": "assets/photos/orion-delivery-a.webp"
+  },
+  {
+    "slug": "orion-delivery-b",
+    "source": "https://images-assets.nasa.gov/image/KSC-20230602-PH-GEB01-0056/collection.json",
+    "asset": "http://images-assets.nasa.gov/image/KSC-20230602-PH-GEB01-0056/KSC-20230602-PH-GEB01-0056~large.jpg",
+    "output": "assets/photos/orion-delivery-b.webp"
+  },
+  {
+    "slug": "crew-with-egs-wide",
+    "source": "https://images-assets.nasa.gov/image/KSC-20230807-PH-KLS01_0511/collection.json",
+    "asset": "http://images-assets.nasa.gov/image/KSC-20230807-PH-KLS01_0511/KSC-20230807-PH-KLS01_0511~large.jpg",
+    "output": "assets/photos/crew-with-egs-wide.webp"
+  }
+]

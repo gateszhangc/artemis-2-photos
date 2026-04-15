@@ -1,0 +1,21 @@
+{
+  "name": "Artemis 2 Photos",
+  "short_name": "Artemis2",
+  "description": "Static editorial archive for official NASA Artemis II imagery.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#07101b",
+  "theme_color": "#0b1220",
+  "icons": [
+    {
+      "src": "/assets/brand/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/brand/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
