@@ -10,7 +10,7 @@ resources:
 images:
   - name: registry.144.91.77.245.sslip.io/artemis-2-photos
     newName: registry.144.91.77.245.sslip.io/artemis-2-photos
-    newTag: bootstrap
+    newTag: 87eea72b9047d318e2262d9c5a60de09a5147f63
 
 commonLabels:
   app.kubernetes.io/name: artemis-2-photos

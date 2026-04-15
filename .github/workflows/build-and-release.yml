@@ -65,13 +65,25 @@ jobs:
           python3 - <<'PY'
           from pathlib import Path
           import os
-          import re
 
           path = Path("deploy/k8s/overlays/prod/kustomization.yaml")
-          content = path.read_text(encoding="utf-8")
-          content = re.sub(r"newTag:\\s*.*", f"newTag: {os.environ['IMAGE_TAG']}", content, count=1)
-          path.write_text(content, encoding="utf-8")
+          updated_lines = []
+          replaced = False
+
+          for line in path.read_text(encoding="utf-8").splitlines():
+              if line.strip().startswith("newTag:"):
+                  indent = line[: len(line) - len(line.lstrip())]
+                  updated_lines.append(f"{indent}newTag: {os.environ['IMAGE_TAG']}")
+                  replaced = True
+              else:
+                  updated_lines.append(line)
+
+          if not replaced:
+              raise SystemExit("newTag line not found in deploy/k8s/overlays/prod/kustomization.yaml")
+
+          path.write_text("\\n".join(updated_lines) + "\\n", encoding="utf-8")
           PY
+          git diff -- deploy/k8s/overlays/prod/kustomization.yaml
 
       - name: Commit updated image tag
         run: |
